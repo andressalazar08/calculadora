@@ -26,5 +26,7 @@ def ruta_suma():
     num2 = request.args.get("num2", type=float)
     if num1 is None or num2 is None:
         return "Faltan parámetros"
-    return f"<p>La suma de {num1} + {num2} es {suma(num1, num2)}</p>"
+    return f"<p>La suma de {num1} + {num2} es {suma(num1, num2)} ok? cambia</p>"
 
+if __name__ == "__main__":
+    app.run(debug=True)
